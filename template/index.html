@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Quest</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="mb-4">
+            <h1 class="text-center py-3 text-black">Path Quest</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="controls d-flex flex-wrap justify-content-center gap-2 mb-3">
+                        <div class="algorithm-selector mb-2">
+                            <select id="algorithm-select" class="form-select">
+                                <option value="dijkstra">Dijkstra's Algorithm</option>
+                                <option value="bfs">Breadth-First Search</option>
+                                <option value="dfs">Depth-First Search</option>
+                                <option value="astar">A* Algorithm</option>
+                            </select>
+                        </div>
+                        <button id="start-button" class="btn btn-success">Visualize Algorithm</button>
+                        <button id="reset-button" class="btn btn-secondary">Reset Grid</button>
+                        <button id="generate-maze" class="btn btn-warning">Generate Random Maze</button>
+                        <div class="btn-group" role="group">
+                            <button id="place-start" class="btn btn-primary">Place Start Node</button>
+                            <button id="place-end" class="btn btn-danger">Place End Node</button>
+                            <button id="place-wall" class="btn btn-dark">Place Walls</button>
+                        </div>
+                    </div>
+                    <div class="algorithm-description text-center mb-3 text-black">
+                        <p id="algorithm-description">Guarantees the shortest path</p>
+                        <!-- Inside the controls div, after the algorithm description -->
+<div class="timer-container mt-2">
+    <div class="timer-bar bg-primary"></div>
+    <span class="timer-text text-black">Time: 0.00s</span>
+</div>
+                    </div>
+                    <div class="legend d-flex flex-wrap justify-content-center gap-3 mb-3">
+                        <div class="legend-item">
+                            <div class="node node-start"></div>
+                            <span class="text-black">Start Node</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="node node-end"></div>
+                            <span class="text-black">End Node</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="node node-wall"></div>
+                            <span class="text-black">Wall</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="node node-visited"></div>
+                            <span class="text-black">Visited Node</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="node node-path"></div>
+                            <span class="text-black">Shortest Path</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="grid-container">
+                <div id="grid" class="grid"></div>
+            </div>
+        </main>
+
+        <footer class="mt-4 text-center">
+            <p class="text-black">© 2025 Path Quest - An Interactive Pathfinding Tool</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="static/js/grid.js"></script>
+    <script src="static/js/pathfinding.js"></script>
+</body>
+</html>
