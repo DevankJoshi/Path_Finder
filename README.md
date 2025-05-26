@@ -1,39 +1,54 @@
-# Path Quest - Pathfinding Visualizer
+# 🧭 Path Quest
 
-![Path Quest Demo](demo.gif)  
-*Note: Replace 'demo.gif' with an actual screenshot or screen recording of your application*
+**Path Quest** is a dynamic and educational pathfinding visualizer built with HTML, CSS, and JavaScript. It allows users to interactively place nodes, draw walls, and observe how popular pathfinding algorithms explore the grid to find the shortest path.
 
-An interactive web application that visualizes various pathfinding algorithms. Watch algorithms like Dijkstra's, A*, BFS, and DFS navigate through a grid while avoiding walls! Perfect for educational purposes or algorithm enthusiasts.
+## 🚀 Demo
 
-## Features
+Try the live demo (if hosted) or run locally by opening `index.html`.
 
-- **Interactive Grid**  
-  Click and drag to place start/end nodes and walls
-- **Multiple Algorithms**  
-  Visualize 4 different pathfinding algorithms:
-  - Dijkstra's Algorithm
-  - A* Search
-  - Breadth-First Search (BFS)
-  - Depth-First Search (DFS)
-- **Maze Generation**  
-  Generate random mazes using recursive division
-- **Real-time Visualization**  
-  Animated node exploration and path tracing
-- **Performance Metrics**  
-  Timer shows algorithm execution time
-- **Responsive Design**  
-  Clean UI with Bootstrap components
-- **Visual Customization**  
-  Unique colors for different algorithms and path elements
+## 📸 Screenshot
 
-## Getting Started
+![Path Quest Screenshot](screenshot.png) <!-- Add your screenshot image to the repo and update this path -->
 
-### Prerequisites
-- Python 3.x
-- Flask
+## 🧠 Algorithms Implemented
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/path-quest.git
-   cd path-quest
+- **Dijkstra’s Algorithm** – Guarantees the shortest path (weighted).
+- **Breadth-First Search (BFS)** – Guarantees the shortest path (unweighted).
+- **Depth-First Search (DFS)** – Does not guarantee the shortest path.
+- **A\* Algorithm** – Guarantees the shortest path using heuristics (Manhattan distance).
+
+## 🎮 How to Use
+
+1. **Choose an Algorithm** from the dropdown.
+2. **Click & Drag** to place walls on the grid.
+3. **Set Start/End Nodes** using the respective buttons.
+4. Click **"Visualize Algorithm"** to begin the animation.
+5. Use **"Reset Grid"** to clear walls and results.
+6. Click **"Generate Random Maze"** to populate walls randomly.
+
+## 🧱 Tech Stack
+
+- HTML5
+- CSS3 (with Bootstrap styling)
+- Vanilla JavaScript (modularized in `grid.js` and `pathfinding.js`)
+
+## 📁 Project Structure
+PathQuest/
+├── index.html               # Main UI
+├── static/
+│   ├── css/
+│   │   └── style.css        # Styling and animations
+│   └── js/
+│       ├── grid.js          # Grid creation & interaction logic
+│       └── pathfinding.js   # Algorithms and visualization
+├── app.py                   # Flask backend placeholder (optional use)
+└── README.md
+
+## 🛠️ Setup Instructions
+
+No build tools or installations required. Just clone and open:
+
+```bash
+git clone https://github.com/yourusername/path-quest.git
+cd path-quest
+open index.html  # or double-click in your file explorer
