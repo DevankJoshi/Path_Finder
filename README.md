@@ -8,7 +8,7 @@ Try the live demo (if hosted) or run locally by opening `index.html`.
 
 ## 📸 Screenshot
 
-![Path Quest Screenshot](screenshot.png) <!-- Add your screenshot image to the repo and update this path -->
+![Path Quest Screenshot](pathfinder.jpeg) <!-- Add your screenshot image to the repo and update this path -->
 
 ## 🧠 Algorithms Implemented
 
